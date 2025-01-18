@@ -47,7 +47,7 @@ const NavHeader = () => {
           
           <div className="profile-picture">
             <img 
-              src="/api/placeholder/40/40" 
+              src="/assets/Images/ProfilePic.webp" 
               alt="Profile" 
               className="profile-img"
             />

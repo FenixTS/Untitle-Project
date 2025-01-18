@@ -1,22 +1,24 @@
-.nav-header {
+/* .nav-header {
     background-color: #115e59;
     padding: 1rem;
     width: 100%;
-  }
+  } */
   
   .nav-container {
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-bottom: 30px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
+  
   }
   
   .search-container {
     flex-grow: 1;
     max-width: 600px;
-    margin-right: auto;
+    /* margin-right: auto; */
   }
   
   .search-wrapper {

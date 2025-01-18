@@ -10,14 +10,14 @@ const ProfileHeader = () => {
         <div className="profile-left">
           <div className="profile-image-container">
             <img 
-              src="/api/placeholder/180/180" 
+              src="/assets/Images/ProfilePic.webp"  
               alt="Profile" 
               className="profile-image"
             />
           </div>
           
           <div className="profile-info">
-            <h1 className="profile-name">Suniel Shetty</h1>
+            <h1 className="profile-name">Fenix</h1>
             <h2 className="profile-title">Founder</h2>
             <p className="profile-bio">
               Entrepreneur | Actor | Investor & Mentor | Sportsman at Heart

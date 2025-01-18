@@ -4,13 +4,21 @@
     padding: 2rem;
   }
   
-  .skills-grid {
+  /* .skills-grid {
     max-width: 1152px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
+  } */
+  .skills-grid {
+    max-width: 100%;
+    margin: 0; /* Removes all margins */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0; /* No padding */
+}
   
   @media (min-width: 640px) {
     .skills-grid {
