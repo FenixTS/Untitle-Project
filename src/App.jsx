@@ -1,5 +1,6 @@
 import React from 'react'
-import ProfileLayout from './Components/ProfilePage/ProfileLayout/ProfileLayout'
+// import ProfileLayout from './Components/ProfilePage/ProfileLayout/ProfileLayout'
+import RecruiterLayout from './Components/RecruterPage/RecruiterLayout/RecruiterLayout'
 
 
 
@@ -7,7 +8,8 @@ import ProfileLayout from './Components/ProfilePage/ProfileLayout/ProfileLayout'
 function App() {
   return (
     <div>
-    <ProfileLayout/>
+    {/* <ProfileLayout/> */}
+    <RecruiterLayout/>
     </div>
   )
 }

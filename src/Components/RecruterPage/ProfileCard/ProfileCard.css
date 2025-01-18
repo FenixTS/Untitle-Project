@@ -1,18 +1,39 @@
-.profile-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 40px;
-  }
-  
-  .profile-left {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  
-  .profile-image {
+.card-container {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.profile-left {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.image-container {
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* .profile-image {
     width: 96px;
     height: 96px;
     border-radius: 50%;
@@ -21,72 +42,96 @@
     padding: 3px; /* Added padding to create space between image and border */
     background-color: white; /* Added to ensure clean border appearance */
     box-shadow: 0 0 0 2px white; /* Creates a white ring around the image */
+  } */
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.profile-info .position {
+  margin: 0;
+  color: #666;
+  font-size: 0.9375rem;
+}
+
+.profile-info .company {
+  margin: 0;
+  color: #666;
+  font-size: 0.9375rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.contact-item a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.contact-item a:hover {
+  color: #006B5E;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    padding: 1rem;
   }
-  
-  .profile-info h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .position-info {
-    display: flex;
+
+  .profile-content {
     flex-direction: column;
-    margin-top: 4px;
+    align-items: center;
+    gap: 1.5rem;
   }
-  
-  .position-info span {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.4;
+
+  .profile-left {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
   }
-  
+
   .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    width: 100%;
+    align-items: center;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
   .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .icon {
-    display: flex;
-    align-items: center;
+    width: 100%;
     justify-content: center;
-    width: 24px;
-    height: 24px;
-    color: #666;
   }
-  
-  .contact-item a {
-    color: #666;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .contact-item a:hover {
-    color: #004d40;
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .profile-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .profile-left {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .contact-links {
-      align-items: center;
-    }
-  }
+}
