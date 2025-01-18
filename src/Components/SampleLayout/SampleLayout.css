@@ -1,0 +1,76 @@
+.profile-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5ff;
+    min-height: 100vh;
+  }
+  
+  .profile-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .top-row, .bottom-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .card {
+    background-color: #FFFFFF;  /* Changed from #000000 to #FFFFFF */
+    border-radius: 16px;
+    padding: 24px;
+  }
+  
+  .small-card {
+    width: 25%;
+    min-height: 280px;
+  }
+  
+  .large-card {
+    width: 75%;
+    min-height: 280px;
+  }
+  
+  .medium-card {
+    width: 50%;
+    min-height: 340px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .top-row, .bottom-row {
+      flex-direction: column;
+    }
+  
+    .small-card,
+    .large-card,
+    .medium-card {
+      width: 100%;
+    }
+  
+    .profile-wrapper {
+      padding: 12px;
+    }
+  
+    .card {
+      padding: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .profile-wrapper {
+      padding: 8px;
+    }
+  
+    .profile-layout {
+      gap: 12px;
+    }
+  
+    .top-row, .bottom-row {
+      gap: 12px;
+    }
+  }

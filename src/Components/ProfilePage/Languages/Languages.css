@@ -1,0 +1,59 @@
+.languages-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .languages-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 20px;
+  }
+  
+  .languages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .language-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .language-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111827;
+  }
+  
+  .language-proficiency {
+    font-size: 0.875rem;
+    color: #6B7280;
+  }
+  
+  @media (max-width: 640px) {
+    .languages-card {
+      padding: 16px;
+    }
+  
+    .languages-list {
+      gap: 16px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .languages-card {
+      max-width: 400px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .languages-card {
+      padding: 32px;
+    }
+  }
