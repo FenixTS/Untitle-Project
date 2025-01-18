@@ -38,12 +38,11 @@
     height: 96px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #004d40; /* Added border */
-    padding: 3px; /* Added padding to create space between image and border */
-    background-color: white; /* Added to ensure clean border appearance */
-    box-shadow: 0 0 0 2px white; /* Creates a white ring around the image */
-  } */
-
+    border: 3px solid #004d40;
+    padding: 3px; 
+    background-color: white; 
+    box-shadow: 0 0 0 2px white; 
+} */
 .profile-info {
   display: flex;
   flex-direction: column;

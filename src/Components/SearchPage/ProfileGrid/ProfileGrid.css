@@ -1,0 +1,164 @@
+.container {
+    padding: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Filters */
+  .filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    background: white;
+    color: #333;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-btn.active {
+    background: #006B5E;
+    color: white;
+    border-color: #006B5E;
+  }
+  
+  .filter-btn:hover {
+    background: #f5f5f5;
+  }
+  
+  .filter-btn.active:hover {
+    background: #005a4f;
+  }
+  
+  /* Profile Grid */
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .profile-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .profile-main {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-info h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .profile-info p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .bookmark-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    padding: 0.25rem;
+  }
+  
+  .bookmark-btn:hover {
+    color: #006B5E;
+  }
+  
+  .location-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #f5f5f5;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    color: #666;
+    align-self: flex-start;
+  }
+  
+  .skill-dots {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e0e0e0;
+  }
+  
+  .more-btn {
+    background: #006B5E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background 0.2s ease;
+    margin-top: auto;
+  }
+  
+  .more-btn:hover {
+    background: #005a4f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .profile-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filters {
+      gap: 0.5rem;
+    }
+  
+    .filter-btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8125rem;
+    }
+  
+    .profile-card {
+      padding: 1rem;
+    }
+  }
